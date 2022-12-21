@@ -3,7 +3,7 @@ const port = 1337;
 
 const server = http.createServer((req, res) => {
   res.statusCode = 200;
-  const msg = 'aplicatie cobai - test!!!\n'
+  const msg = 'aplicatie cobai - test!\n'
   res.end(msg);
 });
 
