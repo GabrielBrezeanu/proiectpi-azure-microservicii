@@ -3,7 +3,7 @@ const port = 1337;
 
 const server = http.createServer((req, res) => {
   res.statusCode = 200;
-  const msg = 'Hello PI!\n'
+  const msg = 'Hello World!\n'
   res.end(msg);
 });
 
