@@ -1,5 +1,8 @@
 {
   "name": "papa-node-hello-000",
   "version": "1.0.0",
-  "lockfileVersion": 1
+  "lockfileVersion": 1,
+  "dependencies": {
+    "index.js": "^0.0.3"
+  }
 }
