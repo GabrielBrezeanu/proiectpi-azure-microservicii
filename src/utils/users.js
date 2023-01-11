@@ -8,7 +8,7 @@ const addUser = ({ id, username, room }) => {
   // Validate the data
   if (!username || !room) {
     return {
-      error: "Username and room are required!"
+      error: "Trebuie sa introduci un username si un room id!"
     };
   }
 
@@ -20,7 +20,7 @@ const addUser = ({ id, username, room }) => {
   // Validate username
   if (existingUser) {
     return {
-      error: "Username is in use!"
+      error: "Username-ul este deja folosit!"
     };
   }
 
