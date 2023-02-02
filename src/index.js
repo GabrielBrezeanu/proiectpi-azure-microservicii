@@ -27,7 +27,7 @@ io.on("connection", socket => {
     } else {
       socket.join(user.room);
 
-      socket.emit("message", generateMessage("Demo PI", `Salut, ${user.username}`));
+      socket.emit("message", generateMessage("[Demo PI]", `Salut, ${user.username}. Foloseste ID-ul ${user.room} pentru a-ti invita prietenii!`));
       socket.broadcast.to(user.room).emit("message", generateMessage("Admin", `${user.username} has joined!`));
       io.to(user.room).emit("roomData", {
         room: user.room,
